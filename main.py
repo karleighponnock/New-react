@@ -18,3 +18,8 @@ my_list = [1, 2,
            5, 6]
 
 x = 3*52 + 7*2
+
+#call functions on seperate lines
+func_one()
+func_two()
+func_three()
