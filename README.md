@@ -1,2 +1,3 @@
 # Python-Attack-Game
-New react file for next lesson not sure what it will do yet
+Practice on attack game <br />
+Object is used to create multiple instances of itself. Each enemy can have it own features
