@@ -5,6 +5,8 @@ playerhp = 260
 enemyatkl = 60
 enemyatkh = 80
 
-#as long as the player has health they can be attacked
 while playerhp > 0:
-   dmg = random.randrange(enemyatkl, enemyatkh)
+    dmg = random.randrange(enemyatkl, enemyatkh)
+    playerhp = playerhp - dmg
+
+    print("Enemy strikes for", dmg, "points of damage. Current HP is", playerhp) 
