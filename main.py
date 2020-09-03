@@ -2,7 +2,6 @@
 #imports of seperate lines unless they are from the same module
 import os
 import sys
-from MyModule import fop, bar, foobar
 
 def my_function(one, two,
                 three, four, 
@@ -15,5 +14,7 @@ def second_function():
 
 
 my_list = [1, 2,
-            3, 4,
-            5, 6]
+           3, 4,
+           5, 6]
+
+x = 3*52 + 7*2
