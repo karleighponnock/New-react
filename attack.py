@@ -17,7 +17,10 @@ while playerhp > 0:
         
     print("Enemy strikes for", dmg, "points of damage. Current HP is", playerhp)
 #if player hits low health print message
-    if playerhp == 30:
-        print("You have low health. You have teleported to the nearest hospital")
-        #break out of while loop
-        break;
+
+    if playerhp > 30:
+        continue
+        
+    print("You have low health. You have teleported to the nearest hospital")
+    #break out of while loop
+    break;
