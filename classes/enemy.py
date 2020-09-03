@@ -4,3 +4,6 @@ class Enemy:
         self.hp = hp
         self.max_mp = mp
         self.mp = mp
+        
+    def get_hp(self):
+        return self.hp
