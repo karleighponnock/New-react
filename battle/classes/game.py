@@ -11,20 +11,22 @@ class bcolors:
     ENDC      = '\033[0m'
     
     
-    #initiallize stats from parameter
 class Person:
     def __init__(self, hp, mp, atk, df, magic):
         self.maxhp = hp
         self.hp = hp
         self.maxmp = mp
         self.mp = mp
-        self.stkl = atk - 10
+        self.atkl = atk - 10
         self.atkh = atk + 10
         self.df = df
         self.magic = magic
-        self.actions = ["Attack", "magic"]
+        self.actions = ["Attack", "Magic"]
 
     def generate_damage(self):
         return random.randrange(self.atkl, self.atkh)
     
-    
+    def generate_spell_damage(self, i):
+        ngl = self.magic[i]["dmg"] - 5
+        ngh = self.magic[i]["dmg"] + 5
+        return random.randrange(ngl, ngh)    
